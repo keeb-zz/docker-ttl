@@ -5,10 +5,12 @@ Container time-to-live - stop a container if it has been running too long.
 # Usage
 
 An oh-so-simple command will get you started:
-  `docker run -v /usr/bin/docker:/bin/docker -v /run/docker.sock:/run/docker.sock keeb/docker-ttl <ttl> <image> <image opts>`
+
+```docker run -v /usr/bin/docker:/bin/docker -v /run/docker.sock:/run/docker.sock keeb/docker-ttl <ttl> <image> <image opts>```
 
 i.e
-  `docker run -v /usr/bin/docker:/bin/docker -v /run/docker.sock:/run/docker.sock keeb/docker-ttl 10s busybox sh -c 'echo hello && sleep 30'`
+
+ ```docker run -v /usr/bin/docker:/bin/docker -v /run/docker.sock:/run/docker.sock keeb/docker-ttl 10s busybox sh -c 'echo hello && sleep 30'```
 
 # Wat
 
